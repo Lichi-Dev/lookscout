@@ -1,0 +1,150 @@
+.nav-container {
+  background-color: #2b63d9;
+  display: flex;
+  padding: 20px 160px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-bottom: 1px solid #648ef7;
+}
+.logo-link-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 160px;
+  height: 40px;
+  margin-right: 64px;
+}
+.menu-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2b63d9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #437ef7;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.login-register-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.login-button {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  background-color: transparent;
+  border: none;
+}
+.signup-button {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  background-color: #437ef7;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  border: #437ef7;
+  border-radius: 6px;
+  padding: 12px 18px;
+}
+.mobile-menu-icon {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+.menu {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .nav-container {
+    padding: 16px;
+  }
+  .menu-container {
+    display: none;
+  }
+  .logo {
+    width: 128px;
+    height: 32px;
+    margin-right: 0px;
+  }
+  .login-register-container {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+  .menu-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -150px;
+    background-color: #2b63d9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .menu-content a {
+    color: #fff;
+    padding: 12px 16px;
+    font-family: "Inter";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    text-decoration: none;
+    display: block;
+  }
+  .menu-content a:hover {
+    background-color: #437ef7;
+  }
+}
