@@ -20,20 +20,25 @@ const Navbar = () => {
       <div className="logo-link-container">
         <img className="logo" src={logo} />
         <div className="menu-container">
-          <Link className="navbar-link">Home</Link>
-          <Link className="navbar-link">Our Products</Link>
+          <Link to="/" className="navbar-link">
+            Home
+          </Link>
+          <Link to="#ourproduct" className="navbar-link">
+            Our Products
+          </Link>
           <div class="dropdown">
             <Link className="navbar-link">
               Resource
               <RiArrowDropDownLine />
             </Link>
             <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="#customerreview">Customer Review</a>
+              <a href="#blog">Blog</a>
             </div>
           </div>
-          <Link className="navbar-link">Contacts</Link>
+          <Link to="#contact" className="navbar-link">
+            Contacts
+          </Link>
         </div>
       </div>
       <div className="login-register-container">
@@ -59,11 +64,17 @@ const Navbar = () => {
             </a>
             {drop ? (
               <div>
-                <a style={{ paddingLeft: "30px", fontSize: "12px" }} href="#">
-                  Home
+                <a
+                  style={{ paddingLeft: "30px", fontSize: "12px" }}
+                  href="#customerreview"
+                >
+                  Customer Review
                 </a>
-                <a style={{ paddingLeft: "30px", fontSize: "12px" }} href="#">
-                  Our Products
+                <a
+                  style={{ paddingLeft: "30px", fontSize: "12px" }}
+                  href="#blog"
+                >
+                  Blog
                 </a>
               </div>
             ) : null}

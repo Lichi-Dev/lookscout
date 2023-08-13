@@ -5,7 +5,7 @@ import Reveal from "../utils/Reveal";
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <div className="contact-sub-container">
         <Reveal>
           <h1 className="contact-heading">1% OF THE INDUSTRY</h1>

@@ -71,7 +71,7 @@ const Footer = () => {
           . All Rights Reserved.
         </h1>
         <div className="social-container">
-          <a href="https://www.instagram.com/" target="__blank">
+          <a href="https://www.facebook.com/" target="__blank">
             <BiLogoFacebookCircle className="social-logo" />
           </a>
           <a href="https://www.google.com/" target="__blank">
@@ -80,7 +80,7 @@ const Footer = () => {
           <a href="https://www.apple.com/" target="__blank">
             <AiFillApple className="social-logo" />
           </a>
-          <a href="https://www.facebook.com/" target="__blank">
+          <a href="https://www.instagram.com/" target="__blank">
             <AiOutlineInstagram className="social-logo" />
           </a>
         </div>

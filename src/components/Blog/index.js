@@ -10,7 +10,7 @@ import Reveal from "../utils/Reveal";
 
 const Blog = () => {
   return (
-    <div className="blog-container">
+    <div id="blog" className="blog-container">
       <div>
         <Reveal>
           <h1 className="our-product-heading">Latest Blog Posts</h1>

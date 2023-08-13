@@ -6,7 +6,7 @@ import Reveal from "../utils/Reveal";
 
 const Customer = () => {
   return (
-    <div className="customer-container">
+    <div id="customerreview" className="customer-container">
       <div className="customer-top-container">
         <Reveal>
           <h1 className="our-product-heading">What Our Customers Say</h1>

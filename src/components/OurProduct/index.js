@@ -44,7 +44,7 @@ let array = [
 
 const OurProduct = () => {
   return (
-    <div className="our-product-container">
+    <div id="ourproduct" className="our-product-container">
       <div>
         <Reveal>
           <h1 className="our-product-heading">Messaging for all</h1>

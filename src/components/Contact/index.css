@@ -60,6 +60,7 @@
   border-right: 0px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+  outline: none;
 }
 .contact-box {
   width: 424px;
