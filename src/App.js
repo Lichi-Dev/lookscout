@@ -11,20 +11,20 @@ import Blog from "./components/Blog";
 import Brand from "./components/Brand";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 2500);
   }, []);
   return (
     <>
       {loading ? (
         <div className="loading-container">
-          <ClimbingBoxLoader color="white" />
+          <PropagateLoader color="white" />
         </div>
       ) : (
         <>
