@@ -55,8 +55,8 @@ const Navbar = () => {
         </button>
         {menu ? (
           <div class="menu-content">
-            <a href="#">Home</a>
-            <a href="#">Our Products</a>
+            <a href="/">Home</a>
+            <a href="#ourproduct">Our Products</a>
             <a href="#" onClick={showDrop}>
               {" "}
               Resource
@@ -79,7 +79,7 @@ const Navbar = () => {
               </div>
             ) : null}
 
-            <a href="#">Contacts</a>
+            <a href="#contact">Contacts</a>
             <a href="#">Log in</a>
             <a href="#">Sign up</a>
           </div>
