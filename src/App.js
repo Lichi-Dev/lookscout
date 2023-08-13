@@ -3,6 +3,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import OurProduct from "./components/OurProduct";
+import RedefiningProduct from "./components/RedefiningProduct";
+import RedefiningProductNew from "./components/RedefiningProductNew";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navbar />
       <Hero />
       <OurProduct />
+      <RedefiningProduct />
+      <RedefiningProductNew />
     </>
   );
 }
