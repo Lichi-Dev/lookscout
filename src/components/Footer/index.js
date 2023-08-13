@@ -21,17 +21,33 @@ const Footer = () => {
         <div className="footer-links-container">
           <div className="link-box">
             <span className="link-heading">Resources</span>
-            <Link className="footer-link">Home</Link>
-            <Link className="footer-link">Our Products</Link>
-            <Link className="footer-link">Home</Link>
-            <Link className="footer-link">Our Products</Link>
+            <a className="footer-link" href="/">
+              Community
+            </a>
+            <a className="footer-link" href="/">
+              Events
+            </a>
+            <a className="footer-link" href="/">
+              Help Center
+            </a>
+            <a className="footer-link" href="/">
+              Partners
+            </a>
           </div>
           <div className="link-box">
-            <span className="link-heading">Resources</span>
-            <Link className="footer-link">Home</Link>
-            <Link className="footer-link">Our Products</Link>
-            <Link className="footer-link">Home</Link>
-            <Link className="footer-link">Our Products</Link>
+            <span className="link-heading">Products</span>
+            <a className="footer-link" href="/">
+              Integrations
+            </a>
+            <a className="footer-link" href="/">
+              Solutions
+            </a>
+            <a className="footer-link" href="/">
+              Features
+            </a>
+            <a className="footer-link" href="/">
+              Enterprise
+            </a>
           </div>
         </div>
         <div className="footer-email-container">
@@ -48,13 +64,25 @@ const Footer = () => {
       </div>
       <div className="footer-bottom-container">
         <h1 className="copyright-text">
-          © 2023 Lookscout. All Rights Reserved.
+          © 2023{" "}
+          <a style={{ textDecoration: "none", color: "grey" }} href="/">
+            Lookscout
+          </a>
+          . All Rights Reserved.
         </h1>
         <div className="social-container">
-          <BiLogoFacebookCircle className="social-logo" />
-          <AiOutlineGoogle className="social-logo" />
-          <AiFillApple className="social-logo" />
-          <AiOutlineInstagram className="social-logo" />
+          <a href="https://www.instagram.com/" target="__blank">
+            <BiLogoFacebookCircle className="social-logo" />
+          </a>
+          <a href="https://www.google.com/" target="__blank">
+            <AiOutlineGoogle className="social-logo" />
+          </a>
+          <a href="https://www.apple.com/" target="__blank">
+            <AiFillApple className="social-logo" />
+          </a>
+          <a href="https://www.facebook.com/" target="__blank">
+            <AiOutlineInstagram className="social-logo" />
+          </a>
         </div>
       </div>
     </div>
