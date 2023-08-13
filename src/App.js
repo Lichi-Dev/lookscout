@@ -14,9 +14,8 @@ import Footer from "./components/Footer";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
