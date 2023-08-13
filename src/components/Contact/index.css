@@ -1,6 +1,6 @@
 .contact-container {
   display: flex;
-  padding: 64px 0px;
+  padding: 64px 64px;
   justify-content: center;
   align-items: center;
   background-color: #fafbfc;
@@ -32,4 +32,96 @@
   line-height: 42px;
   letter-spacing: -0.32px;
   padding: 0px 20vw;
+  margin: 0px;
+}
+
+.submit-button {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  background-color: #437ef7;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  border: #437ef7;
+  border-radius: 0px 6px 6px 0px;
+  padding: 12px 18px;
+}
+.contact-input {
+  width: 100%;
+  border: none;
+  height: 100%;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  background-color: #fff;
+  padding-left: 10px;
+}
+.contact-box {
+  width: 424px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-feature-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 400px;
+}
+.contact-feature-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contact-feature-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.contact-feature-heading {
+  color: #272d37;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact-container {
+    padding: 40px 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-container {
+    padding: 32px 16px;
+  }
+  .contact-box {
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+  }
+  .submit-button {
+    border-radius: 6px 6px 6px 6px;
+
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+  }
+  .contact-input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    box-sizing: border-box;
+  }
+  .contact-feature-container {
+    width: 100%;
+  }
+  .contact-sub-heading {
+    padding: 0px 5vw;
+  }
 }
