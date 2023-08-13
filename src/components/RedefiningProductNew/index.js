@@ -6,6 +6,7 @@ import rp3 from "../../assets/rp3.png";
 import rplg2 from "../../assets/rplg2.png";
 import rpmd from "../../assets/rpmd.png";
 import { FiArrowRight } from "react-icons/fi";
+import Reveal from "../utils/Reveal";
 let array = [
   {
     img: rp1,
@@ -34,19 +35,27 @@ const RedefiningProductNew = () => {
           {array.map((item) => (
             <div className="redefining-product-description-sub-container">
               <div>
-                <img src={item.img} className="our-product-image" />
+                <Reveal>
+                  <img src={item.img} className="our-product-image" />
+                </Reveal>
               </div>
               <div style={{ marginTop: "-15px", marginLeft: "10px" }}>
-                <h1 className="our-product-sub-heading color-fix-header">
-                  {item.heading}
-                </h1>
-                <p className="our-product-sub-para color-fix-para">
-                  {item.para}
-                </p>
-                <div className="our-product-link-container">
-                  <a className="our-product-link">Learn More</a>
-                  <FiArrowRight className="our-product-link" />
-                </div>
+                <Reveal>
+                  <h1 className="our-product-sub-heading color-fix-header">
+                    {item.heading}
+                  </h1>
+                </Reveal>
+                <Reveal>
+                  <p className="our-product-sub-para color-fix-para">
+                    {item.para}
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <div className="our-product-link-container">
+                    <a className="our-product-link">Learn More</a>
+                    <FiArrowRight className="our-product-link" />
+                  </div>
+                </Reveal>
               </div>
             </div>
           ))}

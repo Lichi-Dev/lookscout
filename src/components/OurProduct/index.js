@@ -7,6 +7,7 @@ import op4 from "../../assets/op4.png";
 import op5 from "../../assets/op5.png";
 import op6 from "../../assets/op6.png";
 import { FiArrowRight } from "react-icons/fi";
+import Reveal from "../utils/Reveal";
 
 let array = [
   {
@@ -45,22 +46,33 @@ const OurProduct = () => {
   return (
     <div className="our-product-container">
       <div>
-        <h1 className="our-product-heading">Messaging for all</h1>
-        <p className="our-product-para">
-          User generated content in real-time will have multiple touchpoints for
-          offshoring.
-        </p>
+        <Reveal>
+          <h1 className="our-product-heading">Messaging for all</h1>
+          <p className="our-product-para">
+            User generated content in real-time will have multiple touchpoints
+            for offshoring.
+          </p>
+        </Reveal>
       </div>
+
       <div className="our-product-description-container">
         {array.map((item) => (
           <div className="our-product-box">
-            <img className="our-product-image" src={item.img} />
-            <h1 className="our-product-sub-heading">{item.heading}</h1>
-            <p className="our-product-sub-para">{item.para}</p>
-            <div className="our-product-link-container">
-              <a className="our-product-link">Learn More</a>
-              <FiArrowRight className="our-product-link" />
-            </div>
+            <Reveal>
+              <img className="our-product-image" src={item.img} />
+            </Reveal>
+            <Reveal>
+              <h1 className="our-product-sub-heading">{item.heading}</h1>
+            </Reveal>
+            <Reveal>
+              <p className="our-product-sub-para">{item.para}</p>
+            </Reveal>
+            <Reveal>
+              <div className="our-product-link-container">
+                <a className="our-product-link">Learn More</a>
+                <FiArrowRight className="our-product-link" />
+              </div>
+            </Reveal>
           </div>
         ))}
       </div>

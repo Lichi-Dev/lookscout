@@ -6,6 +6,9 @@ import OurProduct from "./components/OurProduct";
 import RedefiningProduct from "./components/RedefiningProduct";
 import RedefiningProductNew from "./components/RedefiningProductNew";
 import Customer from "./components/Customer";
+import Blog from "./components/Blog";
+import Brand from "./components/Brand";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
       <RedefiningProduct />
       <RedefiningProductNew />
       <Customer />
+      <Blog />
+      <Brand />
+      <Contact />
     </>
   );
 }
