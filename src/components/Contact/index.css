@@ -55,6 +55,11 @@
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
   background-color: #fff;
   padding-left: 10px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  border: 1.5px solid #dae0e6;
+  border-right: 0px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 .contact-box {
   width: 424px;
@@ -114,14 +119,18 @@
   }
   .contact-input {
     width: 100%;
-    border: none;
     height: 50px;
     box-sizing: border-box;
+    border: 1.5px solid #dae0e6;
+    border-radius: 6px;
   }
   .contact-feature-container {
     width: 100%;
   }
   .contact-sub-heading {
     padding: 0px 5vw;
+  }
+  .contact-sub-container {
+    padding: 0px 16px;
   }
 }

@@ -16,16 +16,14 @@ const Contact = () => {
             at all throughout.
           </h1>
         </Reveal>
-        <Reveal>
-          <div className="contact-box">
-            <input
-              className="contact-input"
-              type="text"
-              placeholder="Enter Your Email"
-            />
-            <button className="submit-button">Submit</button>
-          </div>
-        </Reveal>
+        <div className="contact-box">
+          <input
+            className="contact-input"
+            type="text"
+            placeholder="Enter Your Email"
+          />
+          <button className="submit-button">Submit</button>
+        </div>
         <div className="contact-feature-container">
           <Reveal>
             <div className="contact-feature-box">
