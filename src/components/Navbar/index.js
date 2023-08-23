@@ -1,24 +1,43 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import logo from "../../assets/logo.png";
 import { HashLink as Link } from "react-router-hash-link";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
+import axios from "axios";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [drop, setDrop] = useState(false);
+  const [image, setImage] = useState("");
   const showMenu = () => {
     setMenu(!menu);
   };
   const showDrop = () => {
     setDrop(!drop);
   };
+  const getImage = async () => {
+    try {
+      const response = await axios.get(
+        "https://lookscoutbackend.onrender.com/getImage"
+      );
+      setImage(response.data.image);
+      console.log(image);
+    } catch (error) {
+      console.error("Error uploading image:", error);
+    }
+  };
+  useEffect(() => {
+    getImage();
+  });
   return (
     <div className="nav-container">
       <div className="logo-link-container">
-        <img className="logo" src={logo} />
+        <img
+          className="logo"
+          src={`https://lookscoutbackend.onrender.com/uploads/${image}`}
+        />
         <div className="menu-container">
           <Link to="/" className="navbar-link">
             Home
