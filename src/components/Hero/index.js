@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./index.css";
 import hero from "../../assets/hero.png";
 import heromd from "../../assets/hero-md.png";
@@ -7,13 +7,17 @@ import paypal from "../../assets/paypal.png";
 import gitlab from "../../assets/gitlab.png";
 import slack from "../../assets/slack.png";
 import Reveal from "../utils/Reveal";
+import axios from "axios";
+import { UserContext } from "../../App";
 
 const Hero = () => {
+  const { text } = useContext(UserContext);
+  useEffect(() => {}, [text]);
   return (
     <div className="hero-container">
       <div className="hero-details-container">
         <Reveal>
-          <h1 className="hero-heading">Your Supercharged Design Workflow.</h1>
+          <h1 className="hero-heading">{text}</h1>
         </Reveal>
         <Reveal>
           <p className="hero-para">
