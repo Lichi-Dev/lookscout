@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import tick from "../../assets/tick.png";
 import Reveal from "../utils/Reveal";
+import axios from "axios";
 
 const Contact = () => {
+  const [email, setEmail] = useState("");
+  const emailSubit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        "https://lookscoutbackend.onrender.com/sendEmail",
+        {
+          email: email,
+        }
+      );
+      console.log("Email sent", response);
+      setEmail("");
+      alert("Email Sent successfully");
+      // Update state or UI with the retrieved text
+    } catch (error) {
+      if (error.message == "Request failed with status code 500") {
+        setEmail("");
+        alert("Email Already Exists");
+      }
+      console.error("Error getting text:", error);
+    }
+  };
   return (
     <div id="contact" className="contact-container">
       <div className="contact-sub-container">
@@ -16,14 +39,20 @@ const Contact = () => {
             at all throughout.
           </h1>
         </Reveal>
-        <div className="contact-box">
+        <form onSubmit={emailSubit} className="contact-box">
           <input
             className="contact-input"
-            type="text"
+            type="email"
             placeholder="Enter Your Email"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
           />
-          <button className="submit-button">Submit</button>
-        </div>
+          <button type="submit" className="submit-button">
+            Submit
+          </button>
+        </form>
         <div className="contact-feature-container">
           <Reveal>
             <div className="contact-feature-box">
