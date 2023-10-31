@@ -34,10 +34,7 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-link-container">
-        <img
-          className="logo"
-          src={`https://lookscoutbackend.onrender.com/uploads/${image}`}
-        />
+        <img className="logo" src={logo} />
         <div className="menu-container">
           <Link to="/" className="navbar-link">
             Home

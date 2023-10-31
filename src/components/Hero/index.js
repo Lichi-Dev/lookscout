@@ -17,7 +17,7 @@ const Hero = () => {
     <div className="hero-container">
       <div className="hero-details-container">
         <Reveal>
-          <h1 className="hero-heading">{text}</h1>
+          <h1 className="hero-heading">Your Supercharged Design Workflow.</h1>
         </Reveal>
         <Reveal>
           <p className="hero-para">
